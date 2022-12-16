@@ -44,11 +44,11 @@ const jobSchema = new Schema({
     required: true,
   },
   languages: {
-    type: Schema.Types.Array,
+    type: [Schema.Types.String],
     required: true,
   },
   tools: {
-    type: Schema.Types.Array,
+    type: [Schema.Types.String],
     required: true,
   },
 });
