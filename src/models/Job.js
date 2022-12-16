@@ -51,6 +51,10 @@ const jobSchema = new Schema({
     type: [Schema.Types.String],
     required: true,
   },
+  id: {
+    type: Schema.Types.Number,
+    required: true,
+  },
 });
 
 const Job = mongoose.model("Job", jobSchema);
