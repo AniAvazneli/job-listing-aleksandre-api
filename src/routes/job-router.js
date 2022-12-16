@@ -1,8 +1,8 @@
 import express from "express";
-import { getAllJobs } from "../config/controllers/job-controller.js";
+import { getAllJobs } from "../controllers/job-controller.js";
 
-const jobRouter = express.Router()
+const jobRouter = express.Router();
 
-jobRouter.get('/jobs', getAllJobs)
+jobRouter.get("/jobs", getAllJobs);
 
 export default jobRouter;
