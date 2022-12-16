@@ -12,6 +12,6 @@ connectToMongo();
 app.use(bodyParser.json());
 
 app.use("/api", jobRouter);
-app.use('/', ...swaggerMiddleware())
+app.use("/", ...swaggerMiddleware());
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
